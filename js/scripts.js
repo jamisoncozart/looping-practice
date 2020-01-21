@@ -1,14 +1,8 @@
 jQuery(document).ready(function() {
-    jQuery("h1").click(function() {
-        alert("This is a header.");
-        alert("I told you, THIS IS A HEADER!");
-  });
-  
-  jQuery("p").click(function() {
-    alert("This is a paragraph.");
-  });
-  
-  jQuery("img").click(function() {
-    alert("This is an image.");
+  var tags = ["h1", "p", "img"]
+  tags.forEach(function(tag){
+    jQuery(tag).click(function(){
+      alert("this is a " + tag)
+    });
   });
 }); 
